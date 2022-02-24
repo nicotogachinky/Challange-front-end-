@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Config/95.2.5151.52';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll','0':{'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin'} },{'name':'VT VideoPlayback', 'description': 'VT video playback', 'filename': 'vtvideoplayback.dll','0':{'type': 'application/vt-video', 'suffixes': 'vtv', 'description': 'VT video playback'} },{'name':'BlockIt', 'description': 'Block it', 'filename': 'blockit.dll','0':{'type': 'application/block-it', 'suffixes': 'block', 'description': 'Block it'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b95dc486b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <title>Mi página web</title>
+</head>
+
+<body>
+    
+    <div class="sticky">
+        <header class="container-header">
+            <div class="nombre-header">
+                <p class ="nombre"></p>
+            </div>
+
+            <nav class="menu-principal">
+                <a class ="nav-text" href="#sobre-mi">Sobre mí</a>
+                <a class ="nav-text" href="#skills">Skills</a>
+                <a class ="nav-text" href="#hobbies">Hobbies</a>
+                <a class ="nav-text" href="#formacion">Formación</a>
+                <a class ="nav-text" href="#proyectos">Proyectos</a>
+                <a class ="nav-text" href="#contacto">Contacto</a>
+            </nav>
+
+        </header>
+    </div>
+    <main class="container-main">
+
+        <div class="container-titulo">
+            <div class="container-descripcion">
+                <h1>Buenas,soy Nicolas Togachinky y construyo páginas web</h1>
+                <p class="parrafo-perfil">Soy Analista de Sistemas y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
+                <nav class="container-redes">
+                    <a class="nav-text" href="https://github.com/nicotogachinky" target="_blank">Github <i class="fa-solid fa-code"></i></a>
+                    <a class="nav-text" href="https://www.instagram.com/togachinkynicolas/" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a>
+                    <a class="nav-text" href="">Curriculum <i class="fa-solid fa-file-lines"></i></a>
+                </nav>
+            </div>
+            <img class="foto-perfil" src="img/perfil.jpg">
+        </div>
+    </main>
+        
+        <a name="sobre-mi"></a>
+        <div  class="container-sobre-mi">
+            <section class="seccion-sobre-mi">
+                <h2 class="subtitulo">Sobre mí</h2>
+                <p class="biografia">Actualmente tengo 33 años, resido en Gdor. Virasoro,Corrientes, Argentina. Me encuentro trabajando en una entidad financiera y también cursando el programa ONE en Alura Latam.</p>  
+                <br>
+                <p class="biografia">Estoy siempre buscnado mejorar tanto como persona y como profesional.</p>
+                <br>
+                <p class="biografia">Me encanta leer y jugar a los videojuesgos con mi hijo.</p>
+            </section>
+        </div>
+        
+
+        <a name="skills"></a>
+        <section name="skills" class="container-skills">
+            <p class="subtitulo">Skills</p>
+            <div class="conjunto-skills">
+                <div class="cuadrado"><i class="fa-brands fa-css3-alt"></i><p class="cuadrado-descripcion">CCS</p></div>
+                <div class="cuadrado"><i class="fa-brands fa-html5"></i><p class="cuadrado-descripcion">HTML</p></div>
+                <div class="cuadrado"><i class="fa-brands fa-js-square"></i> <p class="cuadrado-descripcion">Javascript</p></div>
+                <div class="cuadrado"><i class="fa-brands fa-android"></i><p class="cuadrado-descripcion">Kotlin</p></div>
+            </div>
+        </section>
+
+        <a name="hobbies"></a>
+        <section name="skills" class="container-hobbies">
+            <p class="subtitulo">Hobbies</p>
+            <div class="conjunto-hobbies">
+                <div class="cuadrado"><i class="fa-solid fa-gamepad"></i><p class="cuadrado-descripcion">Jugar videojuegos</p></div>
+                <div class="cuadrado"><i class='fas fa-ghost'></i><p class="cuadrado-descripcion">Leer</p></div>
+                <div class="cuadrado"><i class='fas fa-walking'></i></i><p class="cuadrado-descripcion">Caminar</p></div>
+            </div>
+        </section>
+
+        <a name="formacion"></a>
+        <div class="container-formacion">
+            <section name="formacion" class="seccion-formacion">
+                <p class="subtitulo">Formación Académica</p>
+
+                <div class="conjunto-formacion">
+                   
+                    <div class="cuadrado-texto">
+                        <div class="cuadrado"><img class="logo" src="/img/isiv.png"></div>
+                        <p class="cuadrado-descripcion">Formacion Analista de Sistemas</p>
+                        <p class="fecha">2007-2009 ISIV </p>
+                    </div>
+
+                    <div class="cuadrado-texto">
+                        <div class="cuadrado"><img class="logo" src="img/One-Logo.png"></div>
+                        <p class="cuadrado-descripcion">Formación ONE</p>
+                        <p class="fecha">Cursando - Oracle + Alura Latam</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <a name="proyectos"></a>
+
+        <section name ="proyectos" class="container-proyectos">
+            <p class="subtitulo">Experiencia profesional</i></p>
+            
+            <div class="conjunto-imagen-botones">
+                <img class="imagen-proyecto" src="img/py1.png">
+                <div class="conjunto-titulo-descripcion-botones">
+                    <h2 class="subtitulo2">Encriptador de textos</h2>
+                    <p class="descripcion-subtitulo2">Solo computadoras</p>
+
+                    <div class="conjunto-botones">
+                        <a class="boton-repositorio" href="https://github.com/nicotogachinky/Challange-n-1-ONE-ORACLE" target="_blank"><span>Repositorio</span></a>
+                        <a class="boton-ver" href="https://nicotogachinky.github.io/Challange-n-1-ONE-ORACLE/" target="_blank"></span>Ver demo</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conjunto-imagen-botones">
+                <div class="conjunto-titulo-descripcion-botones">
+                    <h2 class="subtitulo2">Juego del ahorcado</h2>
+                    <p class="descripcion-subtitulo2">Solo computadoras</p>
+                    <div class="conjunto-botones">
+                        <a class="boton-repositorio" href="https://github.com/nicotogachinky/2do-Challange-Oracle-One" target="_blank"><span>Repositorio</span></a>
+                        <a class="boton-ver" href="https://nicotogachinky.github.io/2do-Challange-Oracle-One/" target="_blank"></span>Ver demo</span></a>
+                    </div>
+                </div>
+
+                <img class="imagen-proyecto-2" src="img/ahorcado6.png">
+                
+            </div>
+                
+            </div>
+
+
+        </section>
+
+        <a name="contacto"></a>
+        <div class="fondo-formulario-contacto">
+            <section name="contacto" class="container-contacto">
+                <img class="imagen-formulario" src="img/contacto.jpeg">
+                <div class="conjunto-formulario">
+                    <h2 class="subtitulo2">Contacto</h2>
+                    <p class="biografia">¿Quieres contactarme?</p>
+                    <p class="biografia">Complete el siguiente formulario y me pondré en contacto lo antes posible</p>
+                    <form action="https://formspree.io/f/xoqrdnpn" method="POST">
+
+                        <div class="grupo-form">
+                            <label  class="label" for="nombreapellido">Nombre y Apellido</label>
+                            <input type="text" name="nombre" id="nombre-apellido" class="input-form" placeholder="Nombre y Apellido" autocomplete="off" required>
+                        </div>  
+
+                        <div class="grupo-form">
+                            <label class="label" for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="input-form" placeholder="Correo electrónico" autocomplete="off" required>
+                        </div>
+                        <div class="grupo-form">
+                            <label class="label" for="asunto">Asunto</label>
+                            <input type="text" name="asunto" id="asunto" class="input-form" placeholder="Asunto" autocomplete="off" required>
+                        </div>
+                        
+                        <div class="grupo-form">
+                            <label class="label" for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="mensaje-form"></textarea>
+                        </div>
+                        <button class="boton-enviar" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    
+        
+    <footer class="fondo-footer">
+        <div class="container-footer">
+            <p class="footer-text">Desarrollado por Nicolas Togachinky</p>
+        </div>
+    </footer>
+</body>
+
+</html>
