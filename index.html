@@ -10,7 +10,7 @@
     
 
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
-    <title>Mi página web</title>
+    <title>Mi portfolio</title>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
                 <h2 class="subtitulo">Sobre mí</h2>
                 <p class="biografia">Actualmente tengo 33 años, resido en Gdor. Virasoro,Corrientes, Argentina. Me encuentro trabajando en una entidad financiera y también cursando el programa ONE en Alura Latam.</p>  
                 <br>
-                <p class="biografia">Estoy siempre buscnado mejorar tanto como persona y como profesional.</p>
+                <p class="biografia">Estoy siempre buscando mejorar tanto como persona y como profesional.</p>
                 <br>
                 <p class="biografia">Me encanta leer y jugar a los videojuesgos con mi hijo.</p>
             </section>
@@ -149,11 +149,11 @@
                     <h2 class="subtitulo2">Contacto</h2>
                     <p class="biografia">¿Quieres contactarme?</p>
                     <p class="biografia">Complete el siguiente formulario y me pondré en contacto lo antes posible</p>
-                    <form action="https://formspree.io/f/mdobznwn" method="POST">
+                    <form action="https://formspree.io/f/mdobznwn" method="POST" class="form" name="form">
 
                         <div class="grupo-form">
                             <label  class="label" for="nombreapellido">Nombre y Apellido</label>
-                            <input type="text" name="nombre" id="nombre-apellido" class="input-form" placeholder="Nombre y Apellido" autocomplete="off" required>
+                            <input type="text" name="nombre" id="nombre" class="input-form" placeholder="Nombre y Apellido" autocomplete="off" required>
                         </div>  
 
                         <div class="grupo-form">
@@ -169,7 +169,7 @@
                             <label class="label" for="mensaje">Mensaje</label>
                             <textarea name="mensaje" id="mensaje" class="mensaje-form"></textarea>
                         </div>
-                        <button class="boton-enviar" type="submit">Enviar</button>
+                        <button class="boton-enviar" id="botonSubmit" type="submit">Enviar</button>
                     </form>
                 </div>
             </section>
